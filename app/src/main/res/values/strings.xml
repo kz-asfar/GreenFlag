@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">GreenFlag</string>
+    <string name="title">GreenFlag</string>
+    <string name="create_an_account">Create an account</string>
+    <string name="policy_information">Policy Information</string>
+    <string name="request_a_rescue_online">Request a rescue online</string>
+    <string name="car_health_updates">Car health updates</string>
+    <string name="signup_header">Create an Account</string>
+    <string name="password_guidelines">Your Password should have a minimum of 8
+    characters and contain at least one
+    number, one uppercase and one lowercase
+    letter. You can use special characters.</string>
+    <string name="change_photo">Change Photo</string>
+    <string name="age">Age</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="save">Save</string>
+</resources>

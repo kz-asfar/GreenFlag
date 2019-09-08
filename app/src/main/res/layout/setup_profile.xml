@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/black"
+    tools:context=".SetUpAcc">
+
+    <ImageView
+        android:id="@+id/iv_user_photo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="33dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_setup_name"
+        android:layout_width="233dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="15dp"
+        android:background="@android:color/white"
+        app:layout_constraintEnd_toStartOf="@id/iv_user_photo"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_setup_username"
+        android:layout_width="233dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:background="@android:color/white"
+        app:layout_constraintEnd_toStartOf="@id/iv_user_photo"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_setup_name">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_setup_pass"
+        android:layout_width="233dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toStartOf="@id/iv_user_photo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_setup_username">
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_add_photo"
+        android:layout_width="233dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/gradient_button_background"
+        android:text="@string/change_photo"
+        app:layout_constraintEnd_toStartOf="@id/iv_user_photo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_setup_pass" />
+
+    <EditText
+        android:id="@+id/et_signup_age"
+        android:layout_width="233dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:background="@android:color/white"
+        android:text="@string/age"
+        app:layout_constraintEnd_toStartOf="@id/iv_user_photo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_add_photo" />
+
+    <Button
+        android:id="@+id/btn_btithday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:text="Select Birthday"
+        app:layout_constraintEnd_toStartOf="@id/iv_user_photo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_signup_age" />
+
+    <EditText
+        android:id="@+id/country"
+        android:layout_width="233dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:background="@android:color/white"
+        app:layout_constraintEnd_toStartOf="@id/iv_user_photo"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_btithday" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/country">
+    <RadioButton
+        android:id="@+id/btn_radio_male"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:buttonTint="@android:color/white"
+        android:text="@string/male"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/country" />
+
+    <RadioButton
+        android:id="@+id/btn_radio_female"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="3dp"
+        android:textColor="@android:color/white"
+        android:buttonTint="@android:color/white"
+        android:text="@string/female"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_radio_male" />
+
+    <RadioButton
+        android:id="@+id/btn_radio_none"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="3dp"
+        android:textColor="@android:color/white"
+        android:buttonTint="@android:color/white"
+        android:text="Not Specified"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_radio_female" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/postalAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="33dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:inputType="textPostalAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radio_group" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="113dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="413dp"
+        android:background="@drawable/gradient_button_background"
+        android:text="@string/save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toEndOf="@+id/postalAddress"
+        app:layout_constraintTop_toBottomOf="@+id/iv_user_photo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
